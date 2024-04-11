@@ -12,6 +12,12 @@ public class Item implements Product {
         this.price = price;
     }
 
+    public Item(String name, Double price, String extra) {
+        this.name = name;
+        this.price = price;
+        this.extra = extra;
+    }
+
     @Override
     public String name() {
         return null;
