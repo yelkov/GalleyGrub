@@ -43,7 +43,7 @@ public class galleygrub
          * de tipo Item.
          */
 
-       /*System.out.print("\n\t --- GALLEY GRUB ---  \n");
+       System.out.print("\n\t --- GALLEY GRUB ---  \n");
         Product patty = new Item("Krabby Patty", 1.25);
         display(patty);
         Product bits = new Item("Coral Bits", 1.00);
@@ -53,7 +53,7 @@ public class galleygrub
         Product loaf = new Item("Golden Loaf", 2.00);
         display(loaf);
         Product soda = new Item("Seafoam Soda", 1.00);
-        display(soda);*/
+        display(soda);
 
         /**
          * Bubble Bass llega al restaurante
@@ -190,10 +190,12 @@ public class galleygrub
 
         receiptExtra.total();
         receiptExtra.print();
-    }*/
-
-    /*public static void display(Product item) {
-        System.out.print("\t" + item.toString() + "\n");
-    }*/
+        /*
+         */
     }
-}
+
+    public static void display(Product item) {
+        System.out.print("\t" + item.toString() + "\n");
+    }
+    }
+
