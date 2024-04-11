@@ -1,6 +1,8 @@
 package edu.badpals.GalleyGrub;
 
+import edu.badpals.GalleyGrub.Items.Item;
 import edu.badpals.GalleyGrub.Items.Prices;
+import edu.badpals.GalleyGrub.Items.Product;
 
 public class galleygrub
 {
@@ -41,7 +43,7 @@ public class galleygrub
          * de tipo Item.
          */
 
-       /* System.out.print("\n\t --- GALLEY GRUB ---  \n");
+       /*System.out.print("\n\t --- GALLEY GRUB ---  \n");
         Product patty = new Item("Krabby Patty", 1.25);
         display(patty);
         Product bits = new Item("Coral Bits", 1.00);
