@@ -19,6 +19,7 @@ public class ItemFactoryTest {
     public void setup_itemFactory() {
         ItemFactory.clear();
         assertEquals(0, ItemFactory.size());
+        Prices.init_prices();
     }
 
     @Test
@@ -52,7 +53,7 @@ public class ItemFactoryTest {
         assertTrue(item == itemClon);
     }
 
-    /*@Test
+    @Test
     public void get_extra_item_test() {
 
         Item item = ItemFactory.getItem("Krabby Patty", 1.25, "cheese");
@@ -66,7 +67,7 @@ public class ItemFactoryTest {
 
         assertEquals("Coral Bits w/ medium....1,00$", item.toString());
         assertEquals(2, ItemFactory.size());
-    }*/
+    }
 
     @Test
     public void get_present_extra_item_test() {
@@ -80,7 +81,7 @@ public class ItemFactoryTest {
         assertTrue(item == itemClon);
     }
 
-    /*@Test
+    @Test
     public void get_regular_extra_item_test() {
 
         Item kpattywc = ItemFactory.getItem("Krabby Patty", 1.25, "cheese");
@@ -90,5 +91,5 @@ public class ItemFactoryTest {
         Item kpatty = ItemFactory.getItem("Krabby Patty", 1.25);
         assertEquals(2, ItemFactory.size());
         assertNotSame(kpattywc,kpatty);
-    }*/
+    }
 }

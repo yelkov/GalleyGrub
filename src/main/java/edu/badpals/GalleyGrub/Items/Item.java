@@ -20,17 +20,17 @@ public class Item implements Product {
 
     @Override
     public String name() {
-        return null;
+        return name;
     }
 
     @Override
     public Double price() {
-        return null;
+        return price;
     }
 
     @Override
     public String extra() {
-        return null;
+        return extra;
     }
 
     @Override
@@ -40,11 +40,19 @@ public class Item implements Product {
 
     @Override
     public String toString() {
-          StringBuilder sb = new StringBuilder();
-                sb.append(this.name)
-                        .append("....")
-                        .append(String.format("%.2f",this.price))
-                        .append("$");
+        StringBuilder sb = new StringBuilder();
+        sb.append(this.name);
+        if (Prices.contains(this.extra())){
+            sb.append(" w/ " )
+                    .append(this.extra())
+                    .append ("....")
+                    .append(String.format("%.2f",this.price))
+                    .append("$");
+        }else{
+            sb.append("....")
+                    .append(String.format("%.2f",this.price))
+                    .append("$");
+        }
         return sb.toString();
     }
 

@@ -14,8 +14,8 @@ public class ItemFactory {
         return items.get(name);
     }
     public static Item getItem(String name, double price, String extra){
-        items.putIfAbsent(name,new Item(name,price));
-        return items.get(name);
+        items.putIfAbsent(name + "w/" + extra,new Item(name,price,extra));
+        return items.get(name+"w/"+extra);
     }
     public static void clear() {
         items.clear();

@@ -8,7 +8,7 @@ import java.util.Map;
 public class Prices {
     static Map<String, Double> prices = new HashMap<>();
 
-    public Prices() {
+    private Prices() {
     }
 
     public static void init_prices() {
@@ -24,5 +24,8 @@ public class Prices {
             System.out.println("\t" + entry);
         }
 
+    }
+    public static boolean contains(String extra){
+        return prices.containsKey(extra);
     }
 }
