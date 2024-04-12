@@ -3,6 +3,8 @@ package edu.badpals.GalleyGrub;
 import edu.badpals.GalleyGrub.Items.Item;
 import edu.badpals.GalleyGrub.Items.Prices;
 import edu.badpals.GalleyGrub.Items.Product;
+import edu.badpals.GalleyGrub.order.Comanda;
+import edu.badpals.GalleyGrub.order.Order;
 
 public class galleygrub
 {
@@ -82,7 +84,7 @@ public class galleygrub
          * ahorrando asi memoria.
          */
 
-        /*Comanda order = new Order();
+        Comanda order = new Order();
 
         order.addItem("Krabby Patty", 1.25);
         order.addItem("Coral Bits", 1.00);
@@ -90,7 +92,7 @@ public class galleygrub
         order.addItem("Golden Loaf", 2.00);
         order.addItem("Seafoam Soda", 1.00);
 
-        order.display();*/
+        order.display();
 
         /**
          * Squidward Tentacles genera el recibo,
