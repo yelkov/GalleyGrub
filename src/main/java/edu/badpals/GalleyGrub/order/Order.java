@@ -49,11 +49,10 @@ public class Order implements Comanda{
     @Override
     public void display() {
         StringBuilder sb = new StringBuilder();
-        sb.append("\n\t").append("--- ORDER ---").append("\n");
+        sb.append("\n\t").append("--- ORDER ---");
         for (Product item : itemList()){
-            sb.append("\t")
-                    .append(item.toString())
-                    .append("\n");
+            sb.append("\n\t")
+                    .append(item.toString());
         }
         System.out.println(sb.toString());
 
