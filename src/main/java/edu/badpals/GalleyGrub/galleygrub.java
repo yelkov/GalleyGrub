@@ -120,7 +120,7 @@ public class galleygrub
          * pues eso lo haremos con otro componente.
          */
 
-        /*System.out.print("\n\t --- GALLEY GRUB ---  \n");
+        System.out.print("\n\t --- GALLEY GRUB ---  \n");
 
         patty = new Item("Krabby Patty", 1.25, "cheese");
         display(patty);
@@ -131,7 +131,7 @@ public class galleygrub
         loaf = new Item("Golden Loaf", 2.00, "sauce");
         display(loaf);
         soda = new Item("Seafoam Soda", 1.00, "large");
-        display(soda);*/
+        display(soda);
 
         /**
          * Buble Fish sigue zampando
