@@ -139,7 +139,7 @@ public class galleygrub
          * de extras.
          */
 
-        /*order = new Order();
+        order = new Order();
 
         order.addItem("Krabby Patty", 1.25, "cheese");
         order.addItem("Coral Bits", 1.00);
@@ -150,7 +150,7 @@ public class galleygrub
 
         // Utiliza el diccionario Prices para incluir
         // el precio de los extras en la salida por consola.
-        order.display();*/
+        order.display();
 
 
         /**

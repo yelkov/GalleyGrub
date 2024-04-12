@@ -2,6 +2,7 @@ package edu.badpals.GalleyGrub.order;
 
 import edu.badpals.GalleyGrub.Items.Item;
 import edu.badpals.GalleyGrub.Items.ItemFactory;
+import edu.badpals.GalleyGrub.Items.Prices;
 import edu.badpals.GalleyGrub.Items.Product;
 
 import java.util.ArrayList;
@@ -53,6 +54,11 @@ public class Order implements Comanda{
         for (Product item : itemList()){
             sb.append("\n\t")
                     .append(item.toString());
+            if(Prices.contains(item.extra())){
+                sb.append(" + ")
+                        .append(String.format("%.2f",Prices.getPrice(item.extra())))
+                        .append("$");
+            }
         }
         System.out.println(sb.toString());
 

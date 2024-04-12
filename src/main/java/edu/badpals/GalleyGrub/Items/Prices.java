@@ -28,4 +28,7 @@ public class Prices {
     public static boolean contains(String extra){
         return prices.containsKey(extra);
     }
+    public static Double getPrice(String extra){
+        return prices.get(extra);
+    }
 }
