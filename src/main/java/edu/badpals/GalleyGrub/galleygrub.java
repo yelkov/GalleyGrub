@@ -5,6 +5,8 @@ import edu.badpals.GalleyGrub.Items.Prices;
 import edu.badpals.GalleyGrub.Items.Product;
 import edu.badpals.GalleyGrub.order.Comanda;
 import edu.badpals.GalleyGrub.order.Order;
+import edu.badpals.GalleyGrub.receipt.Receipt;
+import edu.badpals.GalleyGrub.receipt.Ticket;
 
 public class galleygrub
 {
@@ -100,10 +102,9 @@ public class galleygrub
          * y lo muestra en pantalla.
          */
 
-        /*Ticket receipt = new Receipt(order);
+        Ticket receipt = new Receipt(order);
         receipt.total();
         receipt.print();
-*/
         /**
          * Eugene H. Krabs quiere obtener un margen
          * de beneficio extra y decide cargar
