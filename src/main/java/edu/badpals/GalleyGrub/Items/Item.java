@@ -13,7 +13,7 @@ public class Item implements Product {
     }
 
     public Item(String name, Double price, String extra) {
-        this.name = name;
+        this.name = name + " w/ " + extra;
         this.price = price;
         this.extra = extra;
     }
@@ -41,18 +41,10 @@ public class Item implements Product {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(this.name);
-        if (Prices.contains(this.extra())){
-            sb.append(" w/ " )
-                    .append(this.extra())
+        sb.append(this.name)
                     .append ("....")
                     .append(String.format("%.2f",this.price))
                     .append("$");
-        }else{
-            sb.append("....")
-                    .append(String.format("%.2f",this.price))
-                    .append("$");
-        }
         return sb.toString();
     }
 
