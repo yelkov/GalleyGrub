@@ -19,7 +19,6 @@ public class ItemFactoryTest {
     public void setup_itemFactory() {
         ItemFactory.clear();
         assertEquals(0, ItemFactory.size());
-        Prices.init_prices();
     }
 
     @Test
