@@ -17,7 +17,6 @@ public class CheeseExtraTest {
 
     @BeforeClass
     public static void setup_receipt() {
-        Prices.init_prices();
         order = new Order();
 
         order.addItem("Krabby Patty", 1.25, "cheese");

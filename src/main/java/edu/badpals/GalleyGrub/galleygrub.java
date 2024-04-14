@@ -27,7 +27,6 @@ public class galleygrub
          * del menu proporcionada.
          */
 
-        Prices.init_prices();
 
         // formatea la salida de cada entrada del diccionario como prefieras
         System.out.print("\n\t --- PRICES ---  \n");
