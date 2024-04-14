@@ -39,12 +39,12 @@ public class Order implements Comanda{
 
     @Override
     public Double getTotal() {
-        return null;
+        return this.total;
     }
 
     @Override
-    public void updateTotal(Double total) {
-
+    public void updateTotal(Double price) {
+        this.total += price;
     }
 
     @Override

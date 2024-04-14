@@ -3,6 +3,7 @@ package edu.badpals.GalleyGrub;
 import edu.badpals.GalleyGrub.Items.Item;
 import edu.badpals.GalleyGrub.Items.Prices;
 import edu.badpals.GalleyGrub.Items.Product;
+import edu.badpals.GalleyGrub.extras.*;
 import edu.badpals.GalleyGrub.order.Comanda;
 import edu.badpals.GalleyGrub.order.Order;
 import edu.badpals.GalleyGrub.receipt.Receipt;
@@ -171,14 +172,14 @@ public class galleygrub
          * El precio total de la comanda se guarda en Order.
          */
 
-        /*Extra regular = new Regular(); // suma el precio base
+        Extra regular = new Regular(); // suma el precio base
         Extra cheese = new CheeseExtra(); // suma el precio del extra cheese
         Extra sauce = new SauceExtra(); // suma el precio de sauce
         Extra size = new SizeLargeExtra(); // suma el precio del tamanho Large
 
         regular.setNextExtra(cheese);
         cheese.setNextExtra(sauce);
-        sauce.setNextExtra(size);*/
+        sauce.setNextExtra(size);
 
         /**
          * Squidward Tentacles genera el recibo,
@@ -186,15 +187,14 @@ public class galleygrub
          * y lo muestra en pantalla.
          */
 
-        /*System.out.print("\n\t --- PRINTIG RECEIPT BIPBIPBIP ---  \n");
+        System.out.print("\n\t --- PRINTIG RECEIPT BIPBIPBIP ---  \n");
 
         Ticket receiptExtra = new Receipt(order);
         receiptExtra.setChain(regular);
 
         receiptExtra.total();
         receiptExtra.print();
-        /*
-         */
+
     }
 
     public static void display(Product item) {
